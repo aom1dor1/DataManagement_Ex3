@@ -1,7 +1,9 @@
 import java.util.Random;
+import java.util.Scanner;
 
 class CoinGame {
     private String[] strarr = new String[5];
+    private String name;
 
     CoinGame() {
         for (int i = 0; i < 5; i++) {
@@ -15,6 +17,7 @@ class CoinGame {
     }
 
     void run() {
+        enterName();
         int cntH = 0, cntT = 0;
         System.out.println("Tossing a coin...");
         for (int i = 1; i <= 3; i++) {
@@ -35,6 +38,13 @@ class CoinGame {
         else{
             System.out.println("You lose");
         }
+    }
+
+    void enterName() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Who are you?");
+        name = sc.nextLine();
+        System.out.println("Hello, " + name + "!");
     }
 
     public static void main(String[] args) {
