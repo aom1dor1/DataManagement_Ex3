@@ -33,10 +33,10 @@ class CoinGame {
         System.out.println("Heads: " + cntH + ", Tails: " + cntT);
 
         if(cntH > cntT){
-            System.out.println("You won");
+            System.out.println(name + " won");
         }
         else{
-            System.out.println("You lose");
+            System.out.println(name + " lose");
         }
     }
 
