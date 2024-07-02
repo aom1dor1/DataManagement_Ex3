@@ -28,6 +28,13 @@ class CoinGame {
             }
         }
         System.out.println("Heads: " + cntH + ", Tails: " + cntT);
+
+        if(cntH > cntT){
+            System.out.println("You won");
+        }
+        else{
+            System.out.println("You lose");
+        }
     }
 
     public static void main(String[] args) {
